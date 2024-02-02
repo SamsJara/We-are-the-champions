@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:wght@200&family=Poiret+One&family=Rubik:wght@300&display=swap');
+
+body{
+    padding: 10px;
+    margin: 0px;
+    background-color: #353148;
+}
+h2 {
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+#container {
+    max-width: 350px;
+    height: 600px;
+    margin: auto;
+    background-color: #1B1924;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: none;
+    border-radius: 8px;
+}
+/*header*/
+header {
+    width: 325px;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+#icon {
+    background-image: url("img/freddie.png");
+    background-size: cover;
+    width: 90px;
+    height: 90px;   
+    margin: auto;
+}
+/*publish section*/
+#publicationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+#inputField {
+    background-color: #444059;
+    width: 317px;
+    height: 118px;
+
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+}
+
+#publishButton {
+    margin-top: 10px;
+    padding: 15px 10px;
+    background-color: #28A9F1;
+    color: #04131C;
+    border: none;
+    border-radius: 8px;
+    width: 317px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+#publishButton:hover, #inputField:hover {
+    opacity: 0.9;
+}
