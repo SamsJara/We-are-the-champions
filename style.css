@@ -4,15 +4,17 @@ body{
     padding: 10px;
     margin: 0px;
     background-color: #353148;
+    user-select: none;
 }
 h2 {
     color: #FFFFFF;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
+    margin-bottom: 0px;
 }
 #container {
     max-width: 350px;
-    height: 600px;
+    height: auto;
     margin: auto;
     background-color: #1B1924;
     display: flex;
@@ -46,20 +48,38 @@ header {
     padding: 0px;
 }
 
-#inputField {
+input {
     background-color: #444059;
-    width: 317px;
-    height: 118px;
-
+    color: #FFFFFF;
     border: none;
     border-radius: 8px;
     margin-bottom: 7px;
+/*para que el texto pase a otra linea si sobrepasa el width de este*/
+}
+#inputField {
+    width: 317px;
+    height: 118px;
     box-sizing: border-box;
 }
 
-#publishButton {
-    margin-top: 10px;
-    padding: 15px 10px;
+#fromTo {
+    width: 317px;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.fromToInputs {
+    width: 145px ;
+    height: 40px;
+    margin: 0px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px;
     background-color: #28A9F1;
     color: #04131C;
     border: none;
@@ -71,6 +91,59 @@ header {
     font-size: 22px;
     cursor: pointer;
 }
-#publishButton:hover, #inputField:hover {
+#publishButton:hover, #inputField:hover, li:hover, .fromToInputs:hover {
     opacity: 0.9;
+}
+
+ul {
+    padding: 10px;
+    width: 350px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #FFFFFF;
+}
+li {
+    width: 317px;
+    height: auto;
+    color: #1B1924;
+    background-color: #FFFFFF;
+    padding: 0px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* organizar el div dentro de los comentarios */
+#divInsideComments {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ #divInsideComments h4, p {
+    margin: 5px 10px;
+    padding: 0px;
+} 
+
+/* preparando el like */
+
+#commentsFooterDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#likeIconComments {
+    text-align: end;
+    font-size: 12px;
+}
+#likeIconComments:hover {
+    color: rgba(255, 0, 0, 0.644);
 }
